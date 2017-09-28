@@ -1,4 +1,4 @@
-package edu.usfca.cs.cs245;
+//package edu.usfca.cs.cs245;
 
 public class BinaryRecursiveSearch implements Practice2Search {
 
@@ -13,6 +13,9 @@ public class BinaryRecursiveSearch implements Practice2Search {
 	}
 	
 	private int search(int[] arr, int target, int min, int max) {
+		/*
+		This one should be min > max or you will fail on the same edge case.
+		*/
 		if (min >= max)
 			return -1;
 		
